@@ -48,70 +48,65 @@
             label9 = new Label();
             isbnrm = new TextBox();
             exemplarrm = new TextBox();
+            button3 = new Button();
+            idLivro = new TextBox();
+            label10 = new Label();
             SuspendLayout();
             // 
             // titulo
             // 
-            titulo.Location = new Point(150, 27);
-            titulo.Margin = new Padding(3, 4, 3, 4);
+            titulo.Location = new Point(131, 20);
             titulo.Name = "titulo";
-            titulo.Size = new Size(285, 27);
+            titulo.Size = new Size(250, 23);
             titulo.TabIndex = 0;
             // 
             // exemplar
             // 
-            exemplar.Location = new Point(150, 65);
-            exemplar.Margin = new Padding(3, 4, 3, 4);
+            exemplar.Location = new Point(131, 49);
             exemplar.Name = "exemplar";
-            exemplar.Size = new Size(285, 27);
+            exemplar.Size = new Size(250, 23);
             exemplar.TabIndex = 1;
             // 
             // isbn
             // 
-            isbn.Location = new Point(150, 104);
-            isbn.Margin = new Padding(3, 4, 3, 4);
+            isbn.Location = new Point(131, 78);
             isbn.Name = "isbn";
-            isbn.Size = new Size(285, 27);
+            isbn.Size = new Size(250, 23);
             isbn.TabIndex = 2;
             // 
             // autor
             // 
-            autor.Location = new Point(150, 143);
-            autor.Margin = new Padding(3, 4, 3, 4);
+            autor.Location = new Point(131, 107);
             autor.Name = "autor";
-            autor.Size = new Size(285, 27);
+            autor.Size = new Size(250, 23);
             autor.TabIndex = 3;
             // 
             // ano
             // 
-            ano.Location = new Point(150, 181);
-            ano.Margin = new Padding(3, 4, 3, 4);
+            ano.Location = new Point(131, 136);
             ano.Name = "ano";
-            ano.Size = new Size(285, 27);
+            ano.Size = new Size(250, 23);
             ano.TabIndex = 4;
             // 
             // edicao
             // 
-            edicao.Location = new Point(150, 220);
-            edicao.Margin = new Padding(3, 4, 3, 4);
+            edicao.Location = new Point(131, 165);
             edicao.Name = "edicao";
-            edicao.Size = new Size(285, 27);
+            edicao.Size = new Size(250, 23);
             edicao.TabIndex = 5;
             // 
             // paginas
             // 
-            paginas.Location = new Point(150, 259);
-            paginas.Margin = new Padding(3, 4, 3, 4);
+            paginas.Location = new Point(131, 194);
             paginas.Name = "paginas";
-            paginas.Size = new Size(285, 27);
+            paginas.Size = new Size(250, 23);
             paginas.TabIndex = 6;
             // 
             // button1
             // 
-            button1.Location = new Point(202, 297);
-            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Location = new Point(131, 223);
             button1.Name = "button1";
-            button1.Size = new Size(157, 31);
+            button1.Size = new Size(101, 23);
             button1.TabIndex = 7;
             button1.Text = "Cadastrar livro";
             button1.UseVisualStyleBackColor = true;
@@ -120,71 +115,72 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(18, 185);
+            label5.Location = new Point(17, 139);
             label5.Name = "label5";
-            label5.Size = new Size(137, 20);
+            label5.Size = new Size(109, 15);
             label5.TabIndex = 24;
             label5.Text = "Ano de publicação:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(97, 147);
+            label4.Location = new Point(85, 110);
             label4.Name = "label4";
-            label4.Size = new Size(49, 20);
+            label4.Size = new Size(40, 15);
             label4.TabIndex = 23;
             label4.Text = "Autor:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(91, 108);
+            label3.Location = new Point(85, 81);
             label3.Name = "label3";
-            label3.Size = new Size(50, 20);
+            label3.Size = new Size(40, 15);
             label3.TabIndex = 22;
             label3.Text = "ISBN*:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(70, 69);
+            label2.Location = new Point(61, 52);
             label2.Name = "label2";
-            label2.Size = new Size(80, 20);
+            label2.Size = new Size(64, 15);
             label2.TabIndex = 21;
             label2.Text = "Exemplar*:";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(91, 31);
+            label1.Location = new Point(80, 23);
             label1.Name = "label1";
-            label1.Size = new Size(56, 20);
+            label1.Size = new Size(45, 15);
             label1.TabIndex = 20;
             label1.Text = "Titulo*:";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(19, 224);
+            label6.Location = new Point(17, 168);
             label6.Name = "label6";
-            label6.Size = new Size(136, 20);
+            label6.Size = new Size(108, 15);
             label6.TabIndex = 25;
             label6.Text = "Número da edição:";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(7, 263);
+            label7.Location = new Point(11, 197);
             label7.Name = "label7";
-            label7.Size = new Size(143, 20);
+            label7.Size = new Size(114, 15);
             label7.TabIndex = 26;
             label7.Text = "Número de páginas:";
             // 
             // button2
             // 
-            button2.Location = new Point(223, 545);
+            button2.Location = new Point(195, 409);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(136, 29);
+            button2.Size = new Size(119, 22);
             button2.TabIndex = 27;
             button2.Text = "Remover livro";
             button2.UseVisualStyleBackColor = true;
@@ -193,42 +189,69 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(91, 480);
+            label8.Location = new Point(85, 360);
             label8.Name = "label8";
-            label8.Size = new Size(50, 20);
+            label8.Size = new Size(40, 15);
             label8.TabIndex = 31;
             label8.Text = "ISBN*:";
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(70, 507);
+            label9.Location = new Point(61, 380);
             label9.Name = "label9";
-            label9.Size = new Size(80, 20);
+            label9.Size = new Size(64, 15);
             label9.TabIndex = 30;
             label9.Text = "Exemplar*:";
             // 
             // isbnrm
             // 
-            isbnrm.Location = new Point(150, 476);
-            isbnrm.Margin = new Padding(3, 4, 3, 4);
+            isbnrm.Location = new Point(131, 357);
             isbnrm.Name = "isbnrm";
-            isbnrm.Size = new Size(285, 27);
+            isbnrm.Size = new Size(250, 23);
             isbnrm.TabIndex = 29;
             // 
             // exemplarrm
             // 
-            exemplarrm.Location = new Point(150, 511);
-            exemplarrm.Margin = new Padding(3, 4, 3, 4);
+            exemplarrm.Location = new Point(131, 383);
             exemplarrm.Name = "exemplarrm";
-            exemplarrm.Size = new Size(285, 27);
+            exemplarrm.Size = new Size(250, 23);
             exemplarrm.TabIndex = 28;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(275, 223);
+            button3.Name = "button3";
+            button3.Size = new Size(106, 23);
+            button3.TabIndex = 32;
+            button3.Text = "Atualizar livro";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // idLivro
+            // 
+            idLivro.Location = new Point(275, 252);
+            idLivro.Name = "idLivro";
+            idLivro.Size = new Size(106, 23);
+            idLivro.TabIndex = 33;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(222, 255);
+            label10.Name = "label10";
+            label10.Size = new Size(47, 15);
+            label10.TabIndex = 34;
+            label10.Text = "ID livro:";
             // 
             // FrmCadstrarLivro
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(878, 649);
+            ClientSize = new Size(768, 487);
+            Controls.Add(label10);
+            Controls.Add(idLivro);
+            Controls.Add(button3);
             Controls.Add(label8);
             Controls.Add(label9);
             Controls.Add(isbnrm);
@@ -250,7 +273,6 @@
             Controls.Add(exemplar);
             Controls.Add(titulo);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 4, 3, 4);
             Name = "FrmCadstrarLivro";
             Text = "FrmCadstrarLivro";
             ResumeLayout(false);
@@ -279,5 +301,8 @@
         private Label label9;
         private TextBox isbnrm;
         private TextBox exemplarrm;
+        private Button button3;
+        private TextBox idLivro;
+        private Label label10;
     }
 }

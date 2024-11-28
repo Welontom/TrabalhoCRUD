@@ -52,7 +52,7 @@
             btnEmprestimo.Name = "btnEmprestimo";
             btnEmprestimo.Size = new Size(200, 57);
             btnEmprestimo.TabIndex = 3;
-            btnEmprestimo.Text = "Emprestimo";
+            btnEmprestimo.Text = "Empréstimo";
             btnEmprestimo.TextAlign = ContentAlignment.MiddleLeft;
             btnEmprestimo.UseVisualStyleBackColor = true;
             btnEmprestimo.Click += button1_Click;
@@ -71,7 +71,7 @@
             btnCadastrarLivro.Name = "btnCadastrarLivro";
             btnCadastrarLivro.Size = new Size(200, 57);
             btnCadastrarLivro.TabIndex = 2;
-            btnCadastrarLivro.Text = "Cadastrar livro";
+            btnCadastrarLivro.Text = "Gerenciar livro";
             btnCadastrarLivro.TextAlign = ContentAlignment.MiddleLeft;
             btnCadastrarLivro.UseVisualStyleBackColor = true;
             btnCadastrarLivro.Click += btnCadastrarLivro_Click;
@@ -90,7 +90,7 @@
             btnCadastrarFuncionario.Name = "btnCadastrarFuncionario";
             btnCadastrarFuncionario.Size = new Size(200, 57);
             btnCadastrarFuncionario.TabIndex = 1;
-            btnCadastrarFuncionario.Text = "Cadastrar funcionário";
+            btnCadastrarFuncionario.Text = "Gerenciar funcionário";
             btnCadastrarFuncionario.TextAlign = ContentAlignment.MiddleLeft;
             btnCadastrarFuncionario.UseVisualStyleBackColor = true;
             btnCadastrarFuncionario.Click += btnCadastrarFuncionario_Click;
@@ -128,7 +128,7 @@
             btnCadastrarCliente.Name = "btnCadastrarCliente";
             btnCadastrarCliente.Size = new Size(200, 57);
             btnCadastrarCliente.TabIndex = 0;
-            btnCadastrarCliente.Text = "Cadastrar cliente";
+            btnCadastrarCliente.Text = "Gerenciar cliente";
             btnCadastrarCliente.TextAlign = ContentAlignment.MiddleLeft;
             btnCadastrarCliente.UseVisualStyleBackColor = true;
             btnCadastrarCliente.Click += button2_Click;

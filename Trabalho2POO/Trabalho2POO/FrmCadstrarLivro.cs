@@ -57,5 +57,180 @@ namespace Trabalho2POO
                 DBConnection.Instance.FecharConexao();
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string tituloQ = "";
+            int exemplarQ=0;
+            string isbnQ="";
+            string autorQ="";
+            int anoQ=0;
+            int edicaoQ=0;
+            int paginasQ = 0;
+
+            using (var conexao = DBConnection.Instance.ObterConexao())
+            {
+                string query = "update livro set titulo = @titulo,exemplar=@exemplar,isbn=@isbn,autor=@autor,anoPublicacao=@ano," +
+                    "edicao=@edicao,paginas=@paginas where idLivro=@id;";
+                MySqlCommand command = new MySqlCommand(query, conexao);
+                if (titulo.Text == "")
+                {
+                    
+                        string query2 = "select titulo from livro where idLivro=@id;";
+                        MySqlCommand command2 = new MySqlCommand(query2, conexao);
+                        command2.Parameters.AddWithValue("@id", idLivro.Text);
+                        conexao.Open();
+                        MySqlDataReader reader = command2.ExecuteReader();
+
+                        while (reader.Read())
+                        {
+                            tituloQ = reader.GetString("titulo");
+                        }
+                        command.Parameters.AddWithValue("@titulo", tituloQ);
+                        DBConnection.Instance.FecharConexao();
+                        conexao.Close();
+                }
+                else 
+                {
+                    command.Parameters.AddWithValue("@titulo", titulo.Text);
+                }
+                if (exemplar.Text == "")
+                {
+                    string query2 = "select exemplar from livro where idLivro=@id;";
+                    MySqlCommand command2 = new MySqlCommand(query2, conexao);
+                    command2.Parameters.AddWithValue("@id", idLivro.Text);
+                    conexao.Open();
+                    MySqlDataReader reader = command2.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        exemplarQ = reader.GetInt16("exemplar");
+                    }
+                    command.Parameters.AddWithValue("@exemplar", exemplarQ);
+                    DBConnection.Instance.FecharConexao();
+                    conexao.Close();
+
+                }
+                else
+                {
+                    command.Parameters.AddWithValue("@exemplar", exemplar.Text);
+                }
+                if (isbn.Text == "")
+                {
+                    string query2 = "select isbn from livro where idLivro=@id;";
+                    MySqlCommand command2 = new MySqlCommand(query2, conexao);
+                    command2.Parameters.AddWithValue("@id", idLivro.Text);
+                    conexao.Open();
+                    MySqlDataReader reader = command2.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        isbnQ = reader.GetString("isbn");
+                    }
+                    command.Parameters.AddWithValue("@isbn", isbnQ);
+                    DBConnection.Instance.FecharConexao();
+                    conexao.Close();
+                }
+                else
+                {
+                    command.Parameters.AddWithValue("@isbn", isbn.Text);
+                }
+                if (autor.Text == "")
+                {
+                    string query2 = "select autor from livro where idLivro=@id;";
+                    MySqlCommand command2 = new MySqlCommand(query2, conexao);
+                    command2.Parameters.AddWithValue("@id", idLivro.Text);
+                    conexao.Open();
+                    MySqlDataReader reader = command2.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        autorQ = reader.GetString("autor");
+                    }
+                    command.Parameters.AddWithValue("@autor", autorQ);
+                    DBConnection.Instance.FecharConexao();
+                    conexao.Close();
+                }
+                else
+                {
+                    command.Parameters.AddWithValue("@autor", autor.Text);
+                }
+                if (ano.Text == "")
+                {
+                    string query2 = "select anoPublicacao from livro where idLivro=@id;";
+                    MySqlCommand command2 = new MySqlCommand(query2, conexao);
+                    command2.Parameters.AddWithValue("@id", idLivro.Text);
+                    conexao.Open();
+                    MySqlDataReader reader = command2.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        anoQ = reader.GetInt16("anoPublicacao");
+                    }
+                    command.Parameters.AddWithValue("@ano", anoQ);
+                    DBConnection.Instance.FecharConexao();
+                    conexao.Close();
+                }
+                else
+                {
+                    command.Parameters.AddWithValue("@ano", ano.Text);
+                }
+                if (edicao.Text == "")
+                {
+                    string query2 = "select edicao from livro where idLivro=@id;";
+                    MySqlCommand command2 = new MySqlCommand(query2, conexao);
+                    command2.Parameters.AddWithValue("@id", idLivro.Text);
+                    conexao.Open();
+                    MySqlDataReader reader = command2.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        edicaoQ = reader.GetInt16("edicao");
+                    }
+                    command.Parameters.AddWithValue("@edicao", edicaoQ);
+                    DBConnection.Instance.FecharConexao();
+                    conexao.Close();
+
+                }
+                else
+                {
+                    command.Parameters.AddWithValue("@edicao", edicao.Text);
+                }
+                if (paginas.Text == "")
+                {
+                    string query2 = "select paginas from livro where idLivro=@id;";
+                    MySqlCommand command2 = new MySqlCommand(query2, conexao);
+                    command2.Parameters.AddWithValue("@id", idLivro.Text);
+                    conexao.Open();
+                    MySqlDataReader reader = command2.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+                        paginasQ = reader.GetInt16("paginas");
+                    }
+                    command.Parameters.AddWithValue("@paginas", paginasQ);
+                    DBConnection.Instance.FecharConexao();
+                    conexao.Close();
+                }
+                else
+                {
+                    command.Parameters.AddWithValue("@paginas", paginas.Text);
+                }
+                
+                
+                
+                
+                
+                
+                
+                command.Parameters.AddWithValue("@id", idLivro.Text);
+
+
+                conexao.Open();
+                command.ExecuteNonQuery();
+                MessageBox.Show("Product Created Successfully!");
+                DBConnection.Instance.FecharConexao();
+            }
+        }
     }
 }

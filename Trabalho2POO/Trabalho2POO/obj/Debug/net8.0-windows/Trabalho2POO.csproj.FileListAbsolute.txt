@@ -35,3 +35,8 @@ C:\Users\welin\source\repos\Trabalho2POO\Trabalho2POO\obj\Debug\net8.0-windows\T
 C:\Users\welin\source\repos\Trabalho2POO\Trabalho2POO\obj\Debug\net8.0-windows\Trabalho2POO.FrmCadstrarLivro.resources
 C:\Users\welin\source\repos\Trabalho2POO\Trabalho2POO\obj\Debug\net8.0-windows\Trabalho2POO.FrmEmprestimo.resources
 C:\Users\welin\source\repos\Trabalho2POO\Trabalho2POO\obj\Debug\net8.0-windows\Trabalho2POO.FrmVisualizar.resources
+C:\Users\welin\source\repos\Trabalho2POO\Trabalho2POO\bin\Debug\net8.0-windows\DotNetEnv.dll
+C:\Users\welin\source\repos\Trabalho2POO\Trabalho2POO\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.dll
+C:\Users\welin\source\repos\Trabalho2POO\Trabalho2POO\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\welin\source\repos\Trabalho2POO\Trabalho2POO\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\welin\source\repos\Trabalho2POO\Trabalho2POO\bin\Debug\net8.0-windows\Sprache.dll

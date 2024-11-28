@@ -6,6 +6,7 @@ using System.Data;
 using System.Data.Common;
 using System.Xml.Linq;
 using System.Drawing;
+using DotNetEnv;
 
 namespace Trabalho2POO
 {
@@ -94,13 +95,21 @@ namespace Trabalho2POO
     }
     public class DBConnection 
     {
+        
         private static DBConnection _instance;
         private MySqlConnection _conexao;
         private static readonly object _lock = new object();
-        private string _connectionString = "server=localhost;user=root;password='123456';database=projeto;" +
-            "sslmode=none;port='3307';";
         private DBConnection()
         {
+            DotNetEnv.Env.Load("C:\\Users\\welin\\source\\repos\\Trabalho2POO\\Trabalho2POO\\.env");
+            string server = Environment.GetEnvironmentVariable("DB_SERVER");
+            string user = Environment.GetEnvironmentVariable("DB_USER");
+            string password = Environment.GetEnvironmentVariable("DB_PASSWORD");
+            string database = Environment.GetEnvironmentVariable("DB_DATABASE");
+            string port = Environment.GetEnvironmentVariable("DB_PORT");
+
+            string _connectionString = $"server={server};user={user};password={password};database={database};" +
+            $"sslmode=none;port={port};";
             _conexao = new MySqlConnection(_connectionString);
         }
         public static DBConnection Instance
