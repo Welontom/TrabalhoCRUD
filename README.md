@@ -1,5 +1,10 @@
 # Conexão ao banco de dados
-Para se conectar ao banco de dados modifique o documento .env.
+Para se conectar ao banco de dados modifique o documento .env. Caso o arquivo .env não apareça no repositório (pois está oculto), crie um arquivo .env no diretório do arquivo .csproj com as seguintes variáveis de ambiente:  
+**DB_SERVER=**  
+**DB_USER=**  
+**DB_PASSWORD=**  
+**DB_DATABASE=projeto**  
+**DB_PORT=**  
 
 # Sobre o projeto
 Este projeto tem como objetivo o desenvolvimento de uma aplicação desktop utilizando C# Windows Forms e MariaDB como banco de dados. O sistema foi projetado para realizar operações de CRUD (Create, Read, Update, Delete) em tabelas específicas, garantindo uma arquitetura robusta e segura com o uso do padrão de projeto Singleton para a conexão com o banco de dados. O banco de dados utilizado é para uma biblioteca. Possui 4 tabelas, cliente, funcionário, livro e empréstimo. A aplicação no forms possui uma barra lateral para acessar sub-formulários para adicionar e remover linhas nas tabelas assim como visualizá-las.  
